@@ -190,6 +190,10 @@ on boot
     # Enable EAS
     write /proc/sys/kernel/sched_energy_aware 1
 
+    # Enable idle state listener
+    write /sys/class/drm/card0/device/idle_encoder_mask 1
+    write /sys/class/drm/card0/device/idle_timeout_ms 100
+
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system
