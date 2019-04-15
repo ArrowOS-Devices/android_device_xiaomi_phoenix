@@ -7,6 +7,9 @@
 # Inherit from sm6150-common
 #$(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/phoenix/phoenix-vendor.mk)
 
