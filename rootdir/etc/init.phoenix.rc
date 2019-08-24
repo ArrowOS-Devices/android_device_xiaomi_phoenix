@@ -60,3 +60,9 @@ on charger
     chmod 0664 /sys/class/power_supply/bms/authentic
     start batteryd
     start batterysecret
+
+on post-fs-data
+    mkdir /data/vendor/nfc 0770 nfc nfc
+
+on init
+    write /sys/class/leds/white/max_brightness 4
