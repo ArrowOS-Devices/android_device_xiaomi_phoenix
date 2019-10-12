@@ -104,6 +104,9 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/public \
     device/qcom/sepolicy/qva/public
 
+# Telephony
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
