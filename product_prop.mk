@@ -24,4 +24,5 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1  \
-    ro.telephony.default_network=22,22
+    ro.telephony.default_network=22,22 \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true
