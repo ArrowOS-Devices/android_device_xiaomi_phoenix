@@ -21,3 +21,4 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
