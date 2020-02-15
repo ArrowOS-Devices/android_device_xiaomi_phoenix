@@ -10,7 +10,11 @@
 DEVICE_PATH := device/xiaomi/phoenix
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := phoenix
+TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
+
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_phoenix
+TARGET_RECOVERY_DEVICE_MODULES := libinit_phoenix
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
