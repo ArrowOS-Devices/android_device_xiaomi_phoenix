@@ -34,6 +34,13 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     libaacwrapper
 
+# A/B
+AB_OTA_UPDATER := false
+
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService
+
 # Audio Configs
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/a2dp_audio_policy_configuration.xml \
