@@ -78,10 +78,13 @@ PRODUCT_PACKAGES += \
 include $(LOCAL_PATH)/product_prop.mk
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
-# roodir
+# Rootdir
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
+PRODUCT_PACKAGES += \
+    init.qcom.rc
+    
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext \
