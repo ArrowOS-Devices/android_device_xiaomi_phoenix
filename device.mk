@@ -53,8 +53,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio/audio_policy_configuration.xml
 
 # Doze
+#PRODUCT_PACKAGES += \
+#    CustomDoze
+
+# Device Settings
 PRODUCT_PACKAGES += \
-    CustomDoze
+    DeviceSettings
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/devicesettings/privapp-permissions-devicesettings.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-devicesettings.xml
 
 # Fastbootd
 PRODUCT_PACKAGES += \
