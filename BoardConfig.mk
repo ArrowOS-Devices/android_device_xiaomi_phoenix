@@ -25,7 +25,6 @@ TARGET_KERNEL_CONFIG := vendor/lineage_phoenix_defconfig
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
 
 # Partitions
-BOARD_VENDORIMAGE_PARTITION_SIZE := 1610612736
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/phoenix/BoardConfigVendor.mk
