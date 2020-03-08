@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_phoenix.mk
+    $(LOCAL_DIR)/bliss_phoenix.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_phoenix-userdebug \
-    lineage_phoenix-eng
+    bliss_phoenix-userdebug \
+    bliss_phoenix-eng
