@@ -271,7 +271,9 @@ vendor/etc/sdr_config.cfg
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_phoenix
 vendor/lib64/hw/fingerprint.fpc.so
 vendor/lib64/hw/fingerprint.goodix.so
+vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
+vendor/lib64/vendor.goodix.hardware.cap.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0_vendor.so
 
 # NFC
