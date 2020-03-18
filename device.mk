@@ -60,6 +60,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CustomDoze
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_phoenix
