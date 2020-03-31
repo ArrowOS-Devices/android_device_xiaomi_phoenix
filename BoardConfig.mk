@@ -50,6 +50,9 @@ TARGET_NO_BOOTLOADER := true
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
+# Charger Mode
+BOARD_CHARGER_ENABLE_SUSPEND := true
+
 # Display density
 TARGET_SCREEN_DENSITY := 440
 
