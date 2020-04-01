@@ -87,7 +87,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 # Rootdir
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
-  
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext \
@@ -100,3 +100,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+# NFC
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    com.gsma.services.nfc \
+    NfcNci \
+    SecureElement \
+    Tag
