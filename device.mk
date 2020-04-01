@@ -88,6 +88,10 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-service.phoenix
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext \
