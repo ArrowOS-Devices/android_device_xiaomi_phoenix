@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PATH := device/xiaomi/phoenix
+
 # Inherit from sm6150-common
 -include device/xiaomi/sm6150-common/BoardConfigCommon.mk
-
-DEVICE_PATH := device/xiaomi/phoenix
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
