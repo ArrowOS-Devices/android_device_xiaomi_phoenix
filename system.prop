@@ -1,0 +1,29 @@
+# displayfeature use poll to monitor backlight brightness
+ro.vendor.bl.poll=true
+
+# System property for AD
+ro.vendor.display.ad=1
+ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
+ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
+ro.vendor.display.sensortype=2
+
+#support unlimited color temperature adjust
+ro.colorpick_adjust=true
+ro.all_modes.colorpick_adjust=true
+
+# system prop for Nfc UICC SE hal enabled
+persist.vendor.radio.uicc_se_enabled=false
+
+# prop for displayfeture cabc/bcbc/dfps
+ro.vendor.cabc.enable=true
+ro.vendor.bcbc.enable=false
+ro.vendor.dfps.enable=true
+
+#for CTS fps
+ro.vendor.display.default_fps=60
+
+# qcom prop,idle timeout, non-idle switch to idle time
+vendor.display.idle_time=1100
+
+#initialize QCA1530 detection
+sys.qca1530=detect
