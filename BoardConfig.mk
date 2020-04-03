@@ -39,8 +39,11 @@ TARGET_NO_BOOTLOADER := true
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
+# Display density
+TARGET_SCREEN_DENSITY := 440
+
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_phoenix
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_phoenix
 TARGET_RECOVERY_DEVICE_MODULES := libinit_phoenix
 
 # Filesystem
