@@ -43,7 +43,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     vendor.display.idle_time=1100 \
     sys.displayfeature_hidl=true \
     vendor.hbm.enable=true \
-    ro.sf.lcd_density=440
+    ro.sf.lcd_density=420
 
 # DPM
 PRODUCT_PRODUCT_PROPERTIES += \
