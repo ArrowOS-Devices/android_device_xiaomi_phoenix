@@ -1,8 +1,73 @@
+# Alarm
+-product/app/PowerOffAlarm/PowerOffAlarm.apk
+product/framework/vendor.qti.hardware.alarm-V1.0-java.jar
+
+# Audio FX modules
+etc/permissions/audiosphere.xml
+framework/audiosphere.jar
+
 # ANT+
 -lib/libantradio.so
 -lib64/libantradio.so
 product/lib/com.qualcomm.qti.ant@1.0.so
 product/lib64/com.qualcomm.qti.ant@1.0.so
+
+# Camera
+lib64/libCameraEffectJNI.so
+lib64/libarcsoft_deflicker.so
+lib64/libarcsoft_single_chart_calibration.so
+lib64/libarcsoft_wideselfie.so
+lib64/libcamera_960_mpbase.so
+lib64/libcamera_arcsoft_beautyshot.so
+lib64/libcamera_arcsoft_handgesture.so
+lib64/libcamera_beauty_mpbase.so
+lib64/libcamera_handgesture_mpbase.so
+lib64/libcamera_wideselfie_mpbase.so
+lib64/libcit_mpbase.so
+lib64/libdeflicker_jni.so
+lib64/libgallery_mpbase.so
+lib64/libcom.xiaomi.camera.algojni.so
+lib64/libcom.xiaomi.camera.mianodejni.so
+lib64/libdualcameraddm.so
+lib64/libhandengine.arcsoft.so
+lib64/libgallery_arcsoft_dualcam_refocus.so
+lib64/libjni_dualcamera.so
+lib64/libjni_wideselfie.so
+lib64/librefocus.so
+lib64/libqvrcamera_client.qti.so
+
+# CNE
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
+product/framework/com.quicinc.cne.api-V1.1-java.jar
+product/framework/com.quicinc.cne.constants-V1.0-java.jar
+product/framework/com.quicinc.cne.constants-V2.0-java.jar
+product/framework/com.quicinc.cne.constants-V2.1-java.jar
+product/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar
+product/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar
+product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar
+product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar
+product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
+product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
+product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
+product/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
+product/framework/vendor.qti.hardware.factory-V1.0-java.jar
+product/framework/vendor.qti.hardware.factory-V1.1-java.jar
+-product/lib64/com.quicinc.cne.api@1.0.so
+-product/lib64/com.quicinc.cne.api@1.1.so
+-product/lib64/com.quicinc.cne.constants@1.0.so
+-product/lib64/com.quicinc.cne.constants@2.0.so
+-product/lib64/com.quicinc.cne.constants@2.1.so
+vendor/etc/permissions/vendor.qti.hardware.factory.xml:product/etc/permissions/vendor.qti.hardware.factory.xml
+
+# Display feature
+bin/displayfeature
+lib64/libdisplayfeature.so
+lib64/libdisplayfeatureservice.so
+lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+lib/libdisplayfeature.so
+lib/libdisplayfeatureservice.so
+lib/vendor.xiaomi.hardware.displayfeature@1.0.so
 
 # DPM
 framework/tcmclient.jar
@@ -25,6 +90,16 @@ product/lib64/libdpmframework.so
 product/lib64/libdpmtcm.so
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk
 
+# FM
+lib/fm_helium.so
+lib/libfm-hci.so
+lib64/fm_helium.so
+lib64/libfm-hci.so
+
+# Graphics (SDM)
+-product/lib/libsdm-disp-apis.qti.so
+-product/lib64/libsdm-disp-apis.qti.so
+
 # IMS
 -product/priv-app/ims/ims.apk|600c6d03c03f88f35c51ba8e6b1a4cb7d70b94e6
 product/lib64/libdiag_system.so
@@ -37,9 +112,76 @@ product/lib64/lib-imsvtutils.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
 
+# Power-off charging daemon
+-bin/charger:bin/chargeonlymode
+
+# Qualcomm MSM Interface
+etc/permissions/qti_libpermissions.xml
+etc/permissions/qti_permissions.xml
+etc/sysconfig/qti_whitelist.xml
+
+# Radio
+-product/app/QtiTelephonyService/QtiTelephonyService.apk
+-product/app/datastatusnotification/datastatusnotification.apk
+-product/app/embms/embms.apk
+product/etc/permissions/embms.xml
+product/etc/permissions/qcrilhook.xml
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml
+product/etc/permissions/telephonyservice.xml
+product/framework/QtiTelephonyServicelibrary.jar
+product/framework/embmslibrary.jar
+product/framework/qcrilhook.jar
+-product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# Radio - IMS
+etc/permissions/com.qualcomm.qti.imscmservice.xml
+-product/app/imssettings/imssettings.apk
+-product/app/uceShimService/uceShimService.apk
+product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
+product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
+product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
+product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
+product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
+product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar
+product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar
+product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar
+product/framework/vendor.qti.ims.callinfo-V1.0-java.jar
+product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
+product/lib64/com.qualcomm.qti.imscmservice@1.0.so
+product/lib64/com.qualcomm.qti.imscmservice@2.0.so
+product/lib64/com.qualcomm.qti.imscmservice@2.1.so
+product/lib64/com.qualcomm.qti.imscmservice@2.2.so
+product/lib64/com.qualcomm.qti.uceservice@2.0.so
+product/lib64/com.qualcomm.qti.uceservice@2.1.so
+product/lib64/lib-imsvideocodec.so
+product/lib64/lib-imsvt.so
+product/lib64/lib-imsvtextutils.so
+product/lib64/lib-imsvtutils.so
+product/lib64/libimscamera_jni.so
+product/lib64/libimsmedia_jni.so
+product/lib64/vendor.qti.ims.callinfo@1.0.so
+product/lib64/vendor.qti.ims.rcsconfig@1.0.so
+product/lib64/vendor.qti.imsrtpservice@2.0.so
+product/lib64/vendor.qti.imsrtpservice@2.1.so
+lib64/libdiag_system.so
+
 # Soundfx - from guacamole QKQ1.190716.003
 product/vendor_overlay/29/lib/soundfx/libvolumelistener.so|e6c1f1bfb7bd5cfb36131aaff0d4e8c74833865d
 product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|1b16cd00fd2144e860f99c0869c2db1489c789a2
+
+# Sensors
+product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
+vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:product/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
+
+# Snapdragon Computer Vision Engine
+product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
+product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
+
+# Soter
+-app/SoterService/SoterService.apk
+product/framework/vendor.qti.hardware.soter-V1.0-java.jar
+product/lib64/vendor.qti.hardware.soter@1.0.so
+product/lib/vendor.qti.hardware.soter@1.0.so
 
 # Telephony
 etc/permissions/privapp-permissions-qti.xml
@@ -56,3 +198,54 @@ product/framework/QtiTelephonyServicelibrary.jar
 
 # Telephony (qti-telephony-common) - from LA.UM.8.9.r1-08400-SM6xx.0
 product/framework/qti-telephony-common.jar|411e1eda313b38205dd89a012d898f74e2ddaee0
+
+# WiFi Display
+bin/wfdservice
+etc/init/wfdservice.rc
+etc/wfdconfigsink.xml
+-framework/WfdCommon.jar
+lib64/libFileMux.so
+lib64/libmmosal.so
+lib64/libmmparser_lite.so
+lib64/libmmrtpdecoder.so
+lib64/libmmrtpencoder.so
+lib64/libwfdclient.so
+lib64/libwfdcommonutils.so
+lib64/libwfdconfigutils.so
+lib64/libwfdmminterface.so
+lib64/libwfdmmsink.so
+lib64/libwfdnative.so
+lib64/libwfdrtsp.so
+lib64/libwfdsinksm.so
+lib64/libwfdsm.so
+lib64/libwfduibcinterface.so
+lib64/libwfduibcsinkinterface.so
+lib64/libwfduibcsink.so
+lib64/libwfduibcsrcinterface.so
+lib64/libwfduibcsrc.so
+lib/com.qualcomm.qti.wifidisplayhal@1.0.so
+lib/libFileMux.so
+lib/libmmosal.so
+lib/libmmparser_lite.so
+lib/libmmrtpdecoder.so
+lib/libmmrtpencoder.so
+lib/libwfdaac.so
+lib/libwfdavenhancements.so
+lib/libwfdclient.so
+lib/libwfdcommonutils.so
+lib/libwfdconfigutils.so
+lib/libwfdmminterface.so
+lib/libwfdmmsink.so
+lib/libwfdmmsrc_system.so
+lib/libwfdrtsp.so
+lib/libwfdservice.so
+lib/libwfdsinksm.so
+lib/libwfdsm.so
+lib/libwfduibcinterface.so
+lib/libwfduibcsinkinterface.so
+lib/libwfduibcsink.so
+lib/libwfduibcsrcinterface.so
+lib/libwfduibcsrc.so
+-priv-app/WfdService/WfdService.apk
+product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
