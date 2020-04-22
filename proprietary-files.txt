@@ -307,7 +307,7 @@ vendor/lib64/vendor.goodix.hardware.cap.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0_vendor.so
 
 # NFC
-vendor/lib/libsn100u_fw.so
+vendor/lib/libsn100u_fw.so|c6ae3eb6085c5077041a1301db8f34b0b6dcce4e
 
 # QDCM
 vendor/etc/qdcm_calib_data_xiaomi_37_02_0a_video_mode_dsc_dsi_panel.xml
