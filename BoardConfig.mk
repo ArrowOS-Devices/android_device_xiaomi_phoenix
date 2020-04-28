@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+BUILD_BROKEN_DUP_RULES := true
 DEVICE_PATH := device/xiaomi/phoenix
 
 # Display density
@@ -14,6 +15,9 @@ TARGET_SCREEN_DENSITY := 440
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
+
+# Audio
+TARGET_PROVIDES_AUDIO_EXTNS := true
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_phoenix
