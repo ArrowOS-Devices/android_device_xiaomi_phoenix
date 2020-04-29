@@ -323,6 +323,10 @@ vendor/lib64/mibokeh_712_opencl.bin
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# Camera Service
+/lib64/libcameraservice.so
+/lib/libcameraservice.so
+
 # Display calibration
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
