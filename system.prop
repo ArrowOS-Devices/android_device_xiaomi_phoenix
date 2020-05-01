@@ -27,3 +27,8 @@ vendor.display.idle_time=1100
 
 #initialize QCA1530 detection
 sys.qca1530=detect
+
+#system property for displayfeature hidl
+sys.displayfeature_hidl=true
+
+vendor.hbm.enable=true
