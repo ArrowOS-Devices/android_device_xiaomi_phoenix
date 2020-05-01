@@ -15,3 +15,13 @@ ro.vendor.audio.fm.disable.spk=true
 # Fingerprint
 ro.hardware.fp.sideCap=true
 ro.hardware.fp.vendor=goodix,fpc
+
+# Graphics
+ro.surface_flinger.set_idle_timer_ms=4000
+ro.surface_flinger.set_touch_timer_ms=4000
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.use_smart_90_for_video=true
+debug.sf.high_fps_early_phase_offset_ns=6100000
+debug.sf.high_fps_early_gl_phase_offset_ns=9000000
+debug.sf.high_fps_late_app_phase_offset_ns=1000000
+debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
