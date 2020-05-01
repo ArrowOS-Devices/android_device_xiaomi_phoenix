@@ -466,8 +466,4 @@
     <integer-array name="config_keyboardTapVibePattern">
         <item>13</item>
     </integer-array>
-
-    <!-- Whether device supports variable refresh rate -->
-    <bool name="config_hasVariableRefreshRate">true</bool>
-    <integer name="config_defaultVariableRefreshRateSetting">3</integer>
 </resources>
