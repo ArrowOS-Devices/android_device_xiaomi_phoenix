@@ -91,28 +91,6 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 
 # Camera
-lib64/libCameraEffectJNI.so:vendor/lib64/libCameraEffectJNI.so
-lib64/libarcsoft_deflicker.so:vendor/lib64/libarcsoft_deflicker.so
-lib64/libarcsoft_single_chart_calibration.so:vendor/lib64/libarcsoft_single_chart_calibration.so
-lib64/libarcsoft_wideselfie.so:vendor/lib64/libarcsoft_wideselfie.so
-lib64/libcamera_960_mpbase.so:vendor/lib64/libcamera_960_mpbase.so
-lib64/libcamera_arcsoft_beautyshot.so:vendor/lib64/libcamera_arcsoft_beautyshot.so
-lib64/libcamera_arcsoft_handgesture.so:vendor/lib64/libcamera_arcsoft_handgesture.so
-lib64/libcamera_beauty_mpbase.so:vendor/lib64/libcamera_beauty_mpbase.so
-lib64/libcamera_handgesture_mpbase.so:vendor/lib64/libcamera_handgesture_mpbase.so
-lib64/libcamera_wideselfie_mpbase.so:vendor/lib64/libcamera_wideselfie_mpbase.so
-lib64/libcit_mpbase.so:vendor/lib64/libcit_mpbase.so
-lib64/libdeflicker_jni.so:vendor/lib64/libdeflicker_jni.so
-lib64/libgallery_mpbase.so:vendor/lib64/libgallery_mpbase.so
-lib64/libcom.xiaomi.camera.algojni.so:vendor/lib64/libcom.xiaomi.camera.algojni.so
-lib64/libcom.xiaomi.camera.mianodejni.so:vendor/lib64/libcom.xiaomi.camera.mianodejni.so
-lib64/libdualcameraddm.so:vendor/lib64/libdualcameraddm.so
-lib64/libhandengine.arcsoft.so:vendor/lib64/libhandengine.arcsoft.so
-lib64/libgallery_arcsoft_dualcam_refocus.so:vendor/lib64/libgallery_arcsoft_dualcam_refocus.so
-lib64/libjni_dualcamera.so:vendor/lib64/libjni_dualcamera.so
-lib64/libjni_wideselfie.so:vendor/lib64/libjni_wideselfie.so
-lib64/librefocus.so:vendor/lib64/librefocus.qti.so
-lib64/libqvrcamera_client.qti.so:vendor/lib64/libqvrcamera_client.qti.so
 vendor/etc/camera/CFR_para_UW_src1.bin
 vendor/etc/camera/CFR_para_UW_src2.bin
 vendor/etc/camera/LDC_FPC_TUNING_DATA.bin
