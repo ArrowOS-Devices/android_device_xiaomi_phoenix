@@ -356,6 +356,20 @@ vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/vendor.goodix.hardware.cap.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0_vendor.so
 
+# Misys
+etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml
+etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml
+framework/vendor.xiaomi.hardware.misys-V1.0-java.jar
+framework/vendor.xiaomi.hardware.misys-V2.0-java.jar
+vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service
+vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service
+vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc
+vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc
+vendor/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
+vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
+vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
+
 # NFC
 vendor/lib/libsn100u_fw.so|c6ae3eb6085c5077041a1301db8f34b0b6dcce4e
 
