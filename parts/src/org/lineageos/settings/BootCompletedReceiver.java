@@ -24,11 +24,13 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 
 import org.lineageos.settings.dirac.DiracUtils;
+import org.lineageos.settings.thermal.ThermalUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
         DiracUtils.initialize(context);
+        ThermalUtils.startService(context);
     }
 }
