@@ -124,6 +124,7 @@ vendor/etc/camera/score_icon.png
 vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
 vendor/etc/camera/vidhance_calibration
 vendor/etc/camera/watermark_font_2300_3199.dat
+vendor/etc/screen_light.xml
 vendor/lib64/camera/com.qti.sensor.phoenix_gc02m1_depth.so
 vendor/lib64/camera/com.qti.sensor.phoenix_gc02m1_front.so
 vendor/lib64/camera/com.qti.sensor.phoenix_gc02m1_macro.so
@@ -304,6 +305,31 @@ vendor/firmware/CAMERA_ICP.elf
 # Camera Service
 /lib64/libcameraservice.so
 /lib/libcameraservice.so
+vendor/bin/cameratest
+vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
+vendor/etc/screen_light.xml
+vendor/lib64/android.hardware.camera.provider@2.4-external.so
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib64/camera.device@1.0-impl.so
+vendor/lib64/camera.device@3.2-impl.so
+vendor/lib64/camera.device@3.3-impl.so
+vendor/lib64/camera.device@3.4-external-impl.so
+vendor/lib64/camera.device@3.4-impl.so
+vendor/lib64/camera.device@3.5-external-impl.so
+vendor/lib64/camera.device@3.5-impl.so
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
+vendor/lib/android.hardware.camera.provider@2.4-external.so
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib/camera.device@1.0-impl.so
+vendor/lib/camera.device@3.2-impl.so
+vendor/lib/camera.device@3.3-impl.so
+vendor/lib/camera.device@3.4-external-impl.so
+vendor/lib/camera.device@3.4-impl.so
+vendor/lib/camera.device@3.5-external-impl.so
+vendor/lib/camera.device@3.5-impl.so
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 
 # Display calibration
 vendor/etc/hdr_config.cfg
