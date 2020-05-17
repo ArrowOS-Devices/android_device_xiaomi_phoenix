@@ -89,6 +89,11 @@
          "oldname:newname", one per entry. -->
     <string-array name="config_displayModeMappings" translatable="false">
         <item>none:basic</item>
+        <item>smartMC:smartMC</item>
+        <item>hal_srgb:sRGB</item>
+        <item>GM_1:GM 1</item>
+        <item>GM_2:GM 2</item>
+        <item>GM_3:GM 3</item>
     </string-array>
 
     <!-- Should we filter any display modes which are unampped? -->
