@@ -16,10 +16,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension@1.0
 
-# Consumer IR
-PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-service.xiaomi
-
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts

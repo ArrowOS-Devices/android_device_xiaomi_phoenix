@@ -94,6 +94,14 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 
+# Consumer IR
+vendor/bin/hw/android.hardware.ir@1.0-service
+vendor/lib64/hw/android.hardware.ir@1.0-impl.so
+vendor/lib64/hw/consumerir.default.so
+vendor/lib/hw/android.hardware.ir@1.0-impl.so
+vendor/lib/hw/consumerir.default.so
+vendor/etc/init/android.hardware.ir@1.0-service.rc
+
 # Camera
 vendor/etc/camera/CFR_para_UW_src1.bin
 vendor/etc/camera/CFR_para_UW_src2.bin
