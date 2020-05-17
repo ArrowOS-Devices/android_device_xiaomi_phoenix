@@ -84,6 +84,10 @@ vendor/lib/soundfx/libdirac.so
 # Audio (speaker amplifier) firmware
 vendor/firmware/tfa98xx.cnt
 
+# Battery
+vendor/bin/batteryd
+vendor/bin/batterysecret
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
