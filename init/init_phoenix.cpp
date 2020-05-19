@@ -85,6 +85,7 @@ void vendor_load_properties() {
             set_ro_product_prop(source, "model", "Redmi K30");
         }
         property_override("ro.build.description", "phoenix-user 10 QKQ1.190825.002 V11.0.9.0.QGHCNXM release-keys");
+        property_override("ro.boot.product.hardware.sku", "phoenix");
     } else if (region == "INDIA") {
         for (const auto &source : ro_props_default_source_order) {
             set_ro_product_prop(source, "brand", "POCO");
