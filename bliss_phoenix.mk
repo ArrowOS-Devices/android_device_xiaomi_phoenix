@@ -31,3 +31,6 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.bliss.maintainer=Jackeagle
