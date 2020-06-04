@@ -145,9 +145,12 @@ vendor/lib64/camera/com.qti.sensor.phoenix_gc02m1_macro.so
 vendor/lib64/camera/com.qti.sensor.phoenix_imx686.so
 vendor/lib64/camera/com.qti.sensor.phoenix_ov8856.so
 vendor/lib64/camera/com.qti.sensor.phoenix_s5k3t2.so
+vendor/lib64/camera/com.qti.sensormodule.phoenix_ofilm_gc02m1_depth_mono.bin
 vendor/lib64/camera/com.qti.sensormodule.phoenix_ofilm_gc02m1_depth.bin
+vendor/lib64/camera/com.qti.sensormodule.phoenix_ofilm_gc02m1_front_mono.bin
 vendor/lib64/camera/com.qti.sensormodule.phoenix_ofilm_gc02m1_front.bin
 vendor/lib64/camera/com.qti.sensormodule.phoenix_ofilm_gc02m1_macro.bin
+vendor/lib64/camera/com.qti.sensormodule.phoenix_ofilm_imx686_full_mp.bin
 vendor/lib64/camera/com.qti.sensormodule.phoenix_ofilm_imx686.bin
 vendor/lib64/camera/com.qti.sensormodule.phoenix_ofilm_ov8856.bin
 vendor/lib64/camera/com.qti.sensormodule.phoenix_ofilm_s5k3t2.bin
@@ -158,7 +161,9 @@ vendor/lib64/camera/com.qti.sensormodule.phoenix_sunny_imx686.bin
 vendor/lib64/camera/com.qti.sensormodule.phoenix_sunny_ov8856.bin
 vendor/lib64/camera/com.qti.sensormodule.phoenix_sunny_s5k3t2.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
+vendor/lib64/camera/com.qti.tuned.phoenix_ofilm_gc02m1_depth_mono.bin
 vendor/lib64/camera/com.qti.tuned.phoenix_ofilm_gc02m1_depth.bin
+vendor/lib64/camera/com.qti.tuned.phoenix_ofilm_gc02m1_front_mono.bin
 vendor/lib64/camera/com.qti.tuned.phoenix_ofilm_gc02m1_front.bin
 vendor/lib64/camera/com.qti.tuned.phoenix_ofilm_gc02m1_macro.bin
 vendor/lib64/camera/com.qti.tuned.phoenix_ofilm_imx686.bin
