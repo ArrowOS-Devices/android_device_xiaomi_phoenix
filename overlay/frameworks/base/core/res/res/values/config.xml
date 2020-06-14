@@ -675,13 +675,6 @@
     without impacting power, performance, and app compatibility (e.g. protected content). -->
     <bool name="config_nightDisplayAvailable">false</bool>
 
-
-
-
-
-
-
-
     <!-- Whether camera shutter sound is forced or not  (country specific). -->
     <bool name="config_camera_sound_forced">false</bool>
 
@@ -938,7 +931,6 @@
         <item>7</item>
     </integer-array>
 
-
     <!-- Whether the device has fingeprint sensor or not -->
     <bool name="config_hasFingerprintSensor">true</bool>
 
@@ -955,6 +947,4 @@
    <!-- Does the battery LED support multiple colors?
          Used to decide if the user can change the colors -->
    <bool name="config_multiColorBatteryLed">false</bool>
-
-
 </resources>
