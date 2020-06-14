@@ -10,14 +10,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
-# Inherit some common BlissRoms stuff.
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
-
-# Inherit GApps
-$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+# Inherit some common Arrow stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bliss_phoenix
+PRODUCT_NAME := arrow_phoenix
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi K30
@@ -32,5 +29,3 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.bliss.maintainer=Jackeagle

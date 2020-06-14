@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_phoenix.mk
+    $(LOCAL_DIR)/arrow_phoenix.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_phoenix-userdebug \
-    bliss_phoenix-eng
+    arrow_phoenix-userdebug \
+    arrow_phoenix-eng

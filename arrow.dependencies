@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "android_kernel_xiaomi_phoenix",
+    "target_path": "kernel/xiaomi/sm6150",
+  },
+  {
+    "repository": "vendor_xiaomi_phoenix",
+    "target_path": "vendor/xiaomi/phoenix",
+  }
+]
