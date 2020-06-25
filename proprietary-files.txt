@@ -127,7 +127,7 @@ vendor/etc/camera/hdr_ui9_params.config
 vendor/etc/camera/lf_facerank_model.bin
 vendor/etc/camera/male_bg.png
 vendor/etc/camera/male_icon.png
-vendor/etc/camera/megviifacepp_0_5_2_model
+vendor/etc/camera/megviifacepp_0_5_2_model|1f0cdc706d3853114ecf7a2c0c7436238fcdf258
 vendor/etc/camera/morpho_lowlight4.0_3hdr_algoup.xml
 vendor/etc/camera/morpho_lowlight4.0_adrc_high_1_algoup.xml
 vendor/etc/camera/morpho_lowlight4.0_adrc_high_algoup.xml
