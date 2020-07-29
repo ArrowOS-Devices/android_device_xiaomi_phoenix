@@ -5,7 +5,7 @@
   },
   {
     "repository": "android_vendor_xiaomi_phoenix",
-    "target_path": "vendor/xiaomi/phoenix"
+    "target_path": "vendor/xiaomi"
   },
   {
     "repository": "android_device_xiaomi_sm6150-common",
