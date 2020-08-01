@@ -15,6 +15,7 @@ PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30
 PRODUCT_MANUFACTURER := Xiaomi
+DEVICE_MAINTAINER := harshv23, kubersharma001
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
