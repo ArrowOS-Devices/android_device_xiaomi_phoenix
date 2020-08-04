@@ -1,9 +1,5 @@
 [
   {
-    "repository": "android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings"
-  },
-  {
     "repository": "android_vendor_xiaomi_phoenix",
     "target_path": "vendor/xiaomi"
   },
