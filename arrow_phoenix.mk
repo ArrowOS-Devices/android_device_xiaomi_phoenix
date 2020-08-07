@@ -12,8 +12,8 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := arrow_phoenix
 PRODUCT_DEVICE := phoenix
-PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi K30
+PRODUCT_BRAND := POCO
+PRODUCT_MODEL := POCO X2
 PRODUCT_MANUFACTURER := Xiaomi
 
 # ArrowOS Properties
