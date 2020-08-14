@@ -461,4 +461,7 @@
     <integer-array name="config_keyboardTapVibePattern">
         <item>13</item>
     </integer-array>
+
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">36dip</dimen>
 </resources>
