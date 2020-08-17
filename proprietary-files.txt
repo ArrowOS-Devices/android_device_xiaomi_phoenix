@@ -453,6 +453,10 @@ vendor/lib64/sensors.elliptic.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.touch.so
 
+# Surfaceflinger
+lib64/libdolphin.so
+lib/libdolphin.so
+
 # Touchscreen
 vendor/firmware/NT36xxx_MP_Setting_Criteria_592A.csv
 
