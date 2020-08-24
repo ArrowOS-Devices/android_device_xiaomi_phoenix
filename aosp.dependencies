@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "kernel_xiaomi_phoenix",
+    "target_path": "kernel/xiaomi/phoenix"
+  },
+  {
+    "remote": "pixel-devices-bitbucket",
+    "repository": "vendor_xiaomi_phoenix",
+    "target_path": "vendor/xiaomi/phoenix",
+    "branch": "ten"
+  }
+]
