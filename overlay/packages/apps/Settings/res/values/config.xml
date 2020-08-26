@@ -21,4 +21,8 @@
     -->
     <integer name="config_fingerprintSensorLocation">3</integer>
 
+    <!-- Whether device supports refresh rate switch
+         config_defaultPeakRefreshRate shouldn't be defined as 60 on frameworks/base
+    -->
+    <bool name="config_supportsRefreshRateSwitch">false</bool>
 </resources>
