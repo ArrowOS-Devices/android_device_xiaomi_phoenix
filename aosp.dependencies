@@ -4,7 +4,7 @@
     "target_path": "kernel/xiaomi/phoenix"
   },
   {
-    "remote": "pixel-devices-bitbucket",
+    "remote": "pixel-devices-blobs",
     "repository": "vendor_xiaomi_phoenix",
     "target_path": "vendor/xiaomi/phoenix",
     "branch": "ten"
