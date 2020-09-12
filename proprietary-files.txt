@@ -149,5 +149,3 @@ product/framework/qcrilhook.jar
 product/framework/QtiTelephonyServicelibrary.jar
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
-# Telephony (qti-telephony-common) - from LA.UM.8.9.r1-08300-SM6xx.0
-product/framework/qti-telephony-common.jar|411e1eda313b38205dd89a012d898f74e2ddaee0
