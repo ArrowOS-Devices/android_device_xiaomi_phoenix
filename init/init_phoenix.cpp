@@ -59,6 +59,16 @@ void property_override(char const prop[], char const value[], bool add = true) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
+void property_override_multifp(char const buildfp[], char const systemfp[],
+	char const bootimagefp[], char const vendorfp[], char const odmfp[], char const value[])
+{
+	property_override(buildfp, value);
+	property_override(systemfp, value);
+	property_override(bootimagefp, value);
+	property_override(vendorfp, value);
+        property_override(odmfp, value);
+}
+
 void vendor_load_properties() {
     const auto set_ro_build_prop = [](const std::string &source,
                                       const std::string &prop,
@@ -92,4 +102,8 @@ void vendor_load_properties() {
         }
         property_override("ro.build.description", "phoenixin-user 10 QKQ1.190825.002 V11.0.6.0.QGHINXM release-keys");
     }
+
+    property_override("ro.oem_unlock_supported", "0");
+    property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.bootimage.build.fingerprint",
+	    "ro.vendor.build.fingerprint", "ro.odm.build.fingerprint", "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
 }
