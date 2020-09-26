@@ -93,17 +93,16 @@ void vendor_load_properties() {
             set_ro_product_prop(source, "device", "phoenix");
             set_ro_product_prop(source, "model", "Redmi K30");
         }
-        property_override("ro.build.description", "phoenix-user 10 QKQ1.190825.002 V11.0.9.0.QGHCNXM release-keys");
     } else if (region == "INDIA") {
         for (const auto &source : ro_props_default_source_order) {
             set_ro_product_prop(source, "brand", "POCO");
             set_ro_product_prop(source, "device", "phoenixin");
             set_ro_product_prop(source, "model", "POCO X2");
         }
-        property_override("ro.build.description", "phoenixin-user 10 QKQ1.190825.002 V11.0.6.0.QGHINXM release-keys");
     }
 
     property_override("ro.oem_unlock_supported", "0");
+    property_override("ro.build.description", "coral-user 10 RP1A.201005.004 6782484 release-keys");
     property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.bootimage.build.fingerprint",
 	    "ro.vendor.build.fingerprint", "ro.odm.build.fingerprint", "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
 }
