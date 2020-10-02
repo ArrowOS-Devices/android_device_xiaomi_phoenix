@@ -16,24 +16,36 @@
 
 package org.lineageos.settings;
 
+import android.content.om.IOverlayManager;
 import android.os.Bundle;
+import android.os.RemoteException;
+import android.os.ServiceManager;
+import android.widget.Toast;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
+import androidx.preference.SwitchPreference;
 
 import org.lineageos.settings.utils.RefreshRateUtils;
 
 public class DevicePreferenceFragment extends PreferenceFragment {
+    private static final String OVERLAY_NO_FILL_PACKAGE = "org.lineageos.overlay.notch.nofill";
+
     private static final String KEY_MIN_REFRESH_RATE = "pref_min_refresh_rate";
+    private static final String KEY_PILL_STYLE_NOTCH = "pref_pill_style_notch";
+
+    private IOverlayManager mOverlayService;
 
     private ListPreference mPrefMinRefreshRate;
+    private SwitchPreference mPrefPillStyleNotch;
 
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
+        mOverlayService = IOverlayManager.Stub.asInterface(ServiceManager.getService("overlay"));
     }
 
     @Override
@@ -41,6 +53,8 @@ public class DevicePreferenceFragment extends PreferenceFragment {
         addPreferencesFromResource(R.xml.device_prefs);
         mPrefMinRefreshRate = (ListPreference) findPreference(KEY_MIN_REFRESH_RATE);
         mPrefMinRefreshRate.setOnPreferenceChangeListener(PrefListener);
+        mPrefPillStyleNotch = (SwitchPreference) findPreference(KEY_PILL_STYLE_NOTCH);
+        mPrefPillStyleNotch.setOnPreferenceChangeListener(PrefListener);
     }
 
     @Override
@@ -48,6 +62,12 @@ public class DevicePreferenceFragment extends PreferenceFragment {
         super.onResume();
         mPrefMinRefreshRate.setValueIndex(RefreshRateUtils.getRefreshRate(getActivity()));
         mPrefMinRefreshRate.setSummary(mPrefMinRefreshRate.getEntry());
+        try {
+            mPrefPillStyleNotch.setChecked(
+                    !mOverlayService.getOverlayInfo(OVERLAY_NO_FILL_PACKAGE, 0).isEnabled());
+        } catch (RemoteException e) {
+            // We can do nothing
+        }
     }
 
     private final Preference.OnPreferenceChangeListener PrefListener =
@@ -61,6 +81,15 @@ public class DevicePreferenceFragment extends PreferenceFragment {
                         RefreshRateUtils.setFPS(Integer.parseInt((String) value));
                         mPrefMinRefreshRate.setValueIndex(Integer.parseInt((String) value));
                         mPrefMinRefreshRate.setSummary(mPrefMinRefreshRate.getEntry());
+                    } else if (KEY_PILL_STYLE_NOTCH.equals(key)) {
+                        try {
+                            mOverlayService.setEnabled(
+                                    OVERLAY_NO_FILL_PACKAGE, !(boolean) value, 0);
+                        } catch (RemoteException e) {
+                            // We can do nothing
+                        }
+                        Toast.makeText(getContext(),
+                                R.string.msg_device_need_restart, Toast.LENGTH_SHORT).show();
                     }
                     return true;
                 }
