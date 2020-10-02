@@ -22,8 +22,7 @@ LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res \
-    $(LOCAL_PATH)/../../../../packages/resources/devicesettings/res \
-    $(LOCAL_PATH)/../../../../packages/resources/devicesettings-custom/res
+    $(TOP)/packages/resources/devicesettings/res
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
