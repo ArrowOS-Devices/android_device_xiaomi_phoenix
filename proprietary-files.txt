@@ -1,3 +1,7 @@
+# Alarm
+-product/app/PowerOffAlarm/PowerOffAlarm.apk
+product/framework/vendor.qti.hardware.alarm-V1.0-java.jar
+
 # ANT+
 -lib/libantradio.so
 -lib64/libantradio.so
