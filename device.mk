@@ -38,6 +38,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PACKAGES += \
     AntHalService
 
+# Permissions
+PRODUCT_COPY_FILES += \
+   frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
