@@ -5,9 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_phoenix.mk
-
-COMMON_LUNCH_CHOICES := \
-    aosp_phoenix-user \
-    aosp_phoenix-userdebug \
-    aosp_phoenix-eng
+    $(LOCAL_DIR)/arrow_phoenix.mk
