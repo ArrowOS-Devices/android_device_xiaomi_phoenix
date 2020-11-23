@@ -29,11 +29,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     vendor.camera.aux.packagelist=org.lineageos.snap,net.sourceforge.opencamera,org.codeaurora.snapcam
 
-# Recorder
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.vendor.audio.fluence.voicerec=true \
-    persist.vendor.audio.fluence.audiorec=true
-
 # Telephony
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.default_network=22,22 \
