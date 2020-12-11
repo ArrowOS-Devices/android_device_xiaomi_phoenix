@@ -65,6 +65,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Snap
 
+PRODUCT_PACKAGES += \
+	libmedia_jni_shim
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts

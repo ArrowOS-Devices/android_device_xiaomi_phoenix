@@ -167,6 +167,10 @@ PRODUCT_PRIVATE_SEPOLICY_DIRS += \
     device/qcom/sepolicy/generic/product/private \
     device/qcom/sepolicy/qva/product/private
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    system/lib/libcameraservice.so|libmedia_jni_shim.so
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
