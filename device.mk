@@ -63,7 +63,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    GCamGOPrebuilt
 
 PRODUCT_PACKAGES += \
 	libmedia_jni_shim
