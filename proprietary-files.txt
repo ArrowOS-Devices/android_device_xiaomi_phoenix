@@ -86,21 +86,8 @@ product/etc/CarrierSettings/vodafone_nl.pb|48aedcec52ed2a4ac6641428ca1b3a2f013bd
 product/etc/CarrierSettings/xfinity_us.pb|1b4744e6887943248d1a21282f1bc3b0788ee52a
 -product/priv-app/CarrierSettings/CarrierSettings.apk|5f6509438fd490f850b19e5295cc92edd19e6d4d
 
-# Camera
-lib/vendor.qti.hardware.camera.device@1.0.so
-lib64/libcameraservice.so
-lib64/vendor.qti.hardware.camera.device@1.0.so
-
 # Camera - from picasso - qssi-user 11 RKQ1.200710.002 20.9.8 release-keys
 lib/libcameraservice.so|6b175c80946e1dd90e7576ea01f974244107a769
-lib/android.hardware.camera.common@1.0.so|c4e6567f71431f90e0c12aae376aee68c49a9ef2
-lib/android.hardware.camera.device@1.0.so|9b0a9196fe3142e39a1285e9c2247b35cda55f23
-lib/android.hardware.camera.device@3.2.so|43ecddd03c24a85408983313b34d2f744d0a40ff
-lib/android.hardware.camera.device@3.4.so|2265914782ef823663b91335aacd378f5bf2a795
-lib/android.hardware.camera.provider@2.4.so|be4a965604faea7a16c9aaf5b18030de0d0a3c53
-lib/android.hardware.camera.provider@2.5.so|336ab3fd1b2f6b14f3719fb08237d97e5c2cdbca
-lib/android.hardware.camera.provider@2.6.so|c15d0d18cae567bf1d8b1aa71f05376cc2347469
-system_ext/lib/vendor.qti.hardware.camera.device@3.5.so|37507e7f0fc7a8752d461a4dd85c2dd31fd1afa6
 
 # DPM
 framework/tcmclient.jar
