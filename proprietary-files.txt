@@ -86,9 +86,6 @@ product/etc/CarrierSettings/vodafone_nl.pb|48aedcec52ed2a4ac6641428ca1b3a2f013bd
 product/etc/CarrierSettings/xfinity_us.pb|1b4744e6887943248d1a21282f1bc3b0788ee52a
 -product/priv-app/CarrierSettings/CarrierSettings.apk|5f6509438fd490f850b19e5295cc92edd19e6d4d
 
-# Camera
-lib/libcameraservice.so|7386a421c2be40f99a3b4ccaf7f91b70d4aba3cc
-
 # DPM
 framework/tcmclient.jar
 product/bin/dpmd
