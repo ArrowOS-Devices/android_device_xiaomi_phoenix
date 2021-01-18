@@ -360,9 +360,9 @@
     <!-- Volume controls -->
     <ctl name="WSA_RX0 Digital Volume" value="95" />
     <ctl name="WSA_RX1 Digital Volume" value="95" />
-    <ctl name="RX_RX0 Digital Volume" value="88" />
-    <ctl name="RX_RX1 Digital Volume" value="88" />
-    <ctl name="RX_RX2 Digital Volume" value="88" />
+    <ctl name="RX_RX0 Digital Volume" value="95" />
+    <ctl name="RX_RX1 Digital Volume" value="95" />
+    <ctl name="RX_RX2 Digital Volume" value="95" />
     <ctl name="HPHL Volume" value="23" />
     <ctl name="HPHR Volume" value="23" />
     <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
