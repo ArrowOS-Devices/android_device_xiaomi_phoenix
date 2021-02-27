@@ -166,26 +166,9 @@ TARGET_USES_MKE2FS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 SELINUX_IGNORE_NEVERALLOWS := true
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR := $(DEVICE_PATH)/sepolicy/private
-
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/private \
-    device/qcom/sepolicy/qva/private
-
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/generic/public/attribute \
-    device/qcom/sepolicy/qva/public \
-    device/qcom/sepolicy/qva/public/attribute
-
-PRODUCT_PUBLIC_SEPOLICY_DIRS += \
-    device/qcom/sepolicy/generic/product/public \
-    device/qcom/sepolicy/qva/product/public
-
-PRODUCT_PRIVATE_SEPOLICY_DIRS += \
-    device/qcom/sepolicy/generic/product/private \
-    device/qcom/sepolicy/qva/product/private
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
