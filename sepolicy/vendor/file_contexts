@@ -1,0 +1,34 @@
+# Audio
+/dev/socket/audio_hw_socket                                          u:object_r:audio_socket:s0
+
+# Camera
+/mnt/vendor/persist/camera(/.*)?                                     u:object_r:camera_persist_file:s0
+
+# Display
+/sys/devices/platform/soc/[a-f0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info u:object_r:vendor_sysfs_graphics:s0
+
+# Fingerprint
+/data/vendor/fpc(/.*)?                                               u:object_r:fingerprint_data_file:s0
+/data/vendor/fpdump(/.*)?                                            u:object_r:fingerprint_data_file:s0
+/dev/goodix_fp                                                       u:object_r:fingerprint_device:s0
+/data/vendor/goodix(/.*)?                                            u:object_r:fingerprint_data_file:s0
+
+# HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_sm6150 u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_sm6150-ext u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_sm6150        u:object_r:hal_light_default_exec:s0
+
+# Remosaic
+/vendor/bin/remosaic_daemon                                          u:object_r:remosaic_daemon_exec:s0
+
+# WiFi
+/vendor/bin/nv_mac                                                   u:object_r:vendor_wcnss_service_exec:s0
+
+# Xiaomi thermal daemon
+/vendor/bin/mi_thermald                                              u:object_r:mi_thermald_exec:s0
+/data/vendor/thermal(/.*)?                                           u:object_r:thermal_data_file:s0
+
+# Elliptic
+/dev/elliptic[0-9]                                                   u:object_r:ultrasound_device:s0
+/dev/mius(.*)?                                                       u:object_r:ultrasound_device:s0
+
