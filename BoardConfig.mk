@@ -173,6 +173,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 
 # Props
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
