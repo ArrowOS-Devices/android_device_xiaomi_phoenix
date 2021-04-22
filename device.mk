@@ -167,6 +167,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	libmedia_jni_shim
 
+# CNE
+PRODUCT_PACKAGES += \
+    cneapiclient \
+    com.quicinc.cne \
+    services-ext
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
