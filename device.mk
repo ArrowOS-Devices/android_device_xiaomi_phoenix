@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/phoenix/phoenix-vendor.mk)
+$(call inherit-product, vendor/xiaomi/phoenix/phoenix-vendor.mk)
 
 # Include PSU if synced
 $(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
@@ -23,7 +23,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_BUILD_SUPER_PARTITION := false
 BOARD_BUILD_PRODUCT_IMAGE := true
 PRODUCT_SHIPPING_API_LEVEL := 29
-PRODUCT_TARGET_VNDK_VERSION := 29
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
@@ -33,7 +32,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService
     AntHalService-Soong \
     com.dsi.ant.antradio_library \
     com.dsi.ant@1.0.vendor
@@ -143,7 +141,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
-    libbluetooth_qti \
+    BluetoothQti \
     libbthost_if \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
@@ -158,9 +156,6 @@ PRODUCT_PACKAGES += \
     libxml2 \
     GCamGOPrebuilt \
     vendor.qti.hardware.camera.device@1.0.vendor
-
-PRODUCT_PACKAGES += \
-	libmedia_jni_shim
 
 # CNE
 PRODUCT_PACKAGES += \

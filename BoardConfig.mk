@@ -200,25 +200,17 @@ TARGET_USES_MKE2FS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
-SELINUX_IGNORE_NEVERALLOWS := true
 TARGET_SEPOLICY_DIR := msmsteppe
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    system/lib/libcameraservice.so|libmedia_jni_shim.so
-
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 
 # Treble
 BOARD_VNDK_VERSION := current
@@ -252,5 +244,5 @@ BOARD_HOSTAPD_DRIVER := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_qcwcn
 
 # Inherit from the proprietary version
--include vendor/xiaomi/phoenix/BoardConfigVendor.mk
+include vendor/xiaomi/phoenix/BoardConfigVendor.mk
 
