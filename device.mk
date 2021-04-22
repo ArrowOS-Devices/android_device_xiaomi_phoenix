@@ -421,6 +421,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     $(LOCAL_PATH)/configs/seccomp/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy
 
+# Sensor
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
+# Soter
+PRODUCT_PACKAGES += \
+    libhwbinder.vendor
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
@@ -442,6 +450,7 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
 # Binder
 PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
     libhwbinder \
-    libhwbinder.vendor \
-    libhidltransport
+    libhwbinder.vendor
