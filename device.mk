@@ -442,7 +442,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/xiaomi
 
 # Touchscreen
 PRODUCT_PACKAGES += \
