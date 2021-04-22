@@ -208,6 +208,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor:64
 
+# FM
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
+
 # fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
