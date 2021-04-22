@@ -126,6 +126,9 @@ endif
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
+# Media
+TARGET_DISABLED_UBWC := true
+
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
 TARGET_BOARD_PLATFORM := sm6150
