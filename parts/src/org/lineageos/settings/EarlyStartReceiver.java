@@ -14,20 +14,23 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.thermal;
+package org.lineageos.settings;
 
-import android.os.Bundle;
-import android.preference.PreferenceActivity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Parcel;
+import android.os.RemoteException;
+import android.os.ServiceManager;
 
-public class ThermalActivity extends PreferenceActivity {
+import org.lineageos.settings.utils.RefreshRateUtils;
 
-    private static final String TAG_THERMAL = "thermal";
+public class EarlyStartReceiver extends BroadcastReceiver {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        getFragmentManager().beginTransaction().replace(android.R.id.content,
-                new ThermalSettingsFragment(), TAG_THERMAL).commit();
+    public void onReceive(final Context context, Intent intent) {
+        // Set FPS to 120hz on lock screen so that screen isn't laggy until .BootCompletedReceiver kicks in
+        // Note that we do not have data access at this time (direct boot)
+        RefreshRateUtils.setFPS(4);
     }
 }
