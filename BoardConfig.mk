@@ -198,6 +198,9 @@ TARGET_USES_MKE2FS := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Security
+VENDOR_SECURITY_PATCH := 2020-12-01
+
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
 include device/qcom/sepolicy_vndr/SEPolicy.mk
