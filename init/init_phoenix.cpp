@@ -93,6 +93,7 @@ void vendor_load_properties() {
             set_ro_product_prop(source, "device", "phoenix");
             set_ro_product_prop(source, "model", "Redmi K30");
         }
+ 	property_override("ro.boot.product.hardware.sku", "phoenix");
     } else if (region == "INDIA") {
         for (const auto &source : ro_props_default_source_order) {
             set_ro_product_prop(source, "brand", "POCO");
