@@ -733,6 +733,7 @@ vendor/lib/vendor.qti.gnss@4.0.so|802fb96389a43daa8d537333b50e3452440ab731
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so|d33873a77dabbed7d827fb817a17eeca914461f8
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|a8dc56142459f57d157320fafc735587f80f23c7
 vendor/lib64/libbatching.so|b5b112c1ee9d87f3028a1a6c02d04056537a4b6d
+vendor/lib64/libcdfw.so|140ed3d10b68609ddc0ff75021a3b30508e1c6f5
 vendor/lib64/libdataitems.so|06bb96e1cfcfd75a9b061ba1f4a7be91a19d6a7e
 vendor/lib64/libgarden_haltests_e2e.so|35071942c30e95722a6d230fee70ed23ebc7108b
 vendor/lib64/libgdtap.so|f7ea2035c862fb385d37b224b419aeef4338883e
