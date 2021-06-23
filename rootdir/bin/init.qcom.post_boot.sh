@@ -3220,17 +3220,10 @@ case "$target" in
       fi
 
       # Setting b.L scheduler parameters
-      # default sched up and down migrate values are 90 and 85
-      echo 65 > /proc/sys/kernel/sched_downmigrate
-      echo 71 > /proc/sys/kernel/sched_upmigrate
-      # default sched up and down migrate values are 100 and 95
-      echo 85 > /proc/sys/kernel/sched_group_downmigrate
-      echo 100 > /proc/sys/kernel/sched_group_upmigrate
-      echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
-
-      # colocation v3 settings
-      echo 740000 > /proc/sys/kernel/sched_little_cluster_coloc_fmin_khz
-
+      echo 25 > /proc/sys/kernel/sched_downmigrate_boosted
+      echo 25 > /proc/sys/kernel/sched_upmigrate_boosted
+      echo 85 > /proc/sys/kernel/sched_downmigrate
+      echo 95 > /proc/sys/kernel/sched_upmigrate
 
       # configure governor settings for little cluster
       echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
@@ -3245,11 +3238,6 @@ case "$target" in
       echo "schedutil" > /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
       echo 500 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us
       echo 20000 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us
-
-      # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
-      echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
-      echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
-      echo 85 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
 
       # Set Memory parameters
       configure_memory_parameters
@@ -3296,9 +3284,6 @@ case "$target" in
             echo 0-5 > /dev/cpuset/background/cpus
             echo 0-5 > /dev/cpuset/system-background/cpus
 
-            # Turn off scheduler boost at the end
-            echo 0 > /proc/sys/kernel/sched_boost
-
             # Turn on sleep modes.
             echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
             ;;
@@ -3319,16 +3304,10 @@ case "$target" in
             echo 0 > /sys/devices/system/cpu/cpu6/core_ctl/enable
 
             # Setting b.L scheduler parameters
-            # default sched up and down migrate values are 71 and 65
-            echo 65 > /proc/sys/kernel/sched_downmigrate
-            echo 71 > /proc/sys/kernel/sched_upmigrate
-            # default sched up and down migrate values are 100 and 95
-            echo 85 > /proc/sys/kernel/sched_group_downmigrate
-            echo 100 > /proc/sys/kernel/sched_group_upmigrate
-            echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
-
-            #colocation v3 settings
-            echo 740000 > /proc/sys/kernel/sched_little_cluster_coloc_fmin_khz
+	    echo 25 > /proc/sys/kernel/sched_downmigrate_boosted
+	    echo 25 > /proc/sys/kernel/sched_upmigrate_boosted
+	    echo 85 > /proc/sys/kernel/sched_downmigrate
+	    echo 95 > /proc/sys/kernel/sched_upmigrate
 
             # configure governor settings for little cluster
             echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
@@ -3339,11 +3318,6 @@ case "$target" in
             echo "schedutil" > /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
 	    echo 500 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us
 	    echo 20000 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us
-
-            # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
-            echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
-            echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
-            echo 85 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
 
             echo "0:1248000" > /sys/module/cpu_boost/parameters/input_boost_freq
             echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
@@ -3417,9 +3391,6 @@ case "$target" in
             echo 4-7     > /dev/cpuset/foreground/boost/cpus
             echo 0-2,4-7 > /dev/cpuset/foreground/cpus
             echo 0-7     > /dev/cpuset/top-app/cpus
-
-                # Turn off scheduler boost at the end
-                echo 0 > /proc/sys/kernel/sched_boost
 
                 # Turn on sleep modes.
                 echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
@@ -4141,9 +4112,6 @@ case "$target" in
       echo 0 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/rate_limit_us
       echo 1344000 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_freq
       echo 825600 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
-
-      echo "0:1209600" > /sys/module/cpu_boost/parameters/input_boost_freq
-      echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
 
       # Enable bus-dcvs
       for cpubw in /sys/class/devfreq/*qcom,cpubw*
