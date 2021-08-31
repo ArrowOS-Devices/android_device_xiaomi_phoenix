@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2020 Wave-OS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,31 +19,23 @@ package org.lineageos.settings;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.PowerManager;
 
-import org.lineageos.settings.PowerSaveModeChangeReceiver;
-import org.lineageos.settings.dirac.DiracUtils;
-import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.utils.RefreshRateUtils;
 
-public class BootCompletedReceiver extends BroadcastReceiver {
+public class PowerSaveModeChangeReceiver extends BroadcastReceiver {
+
+    private boolean shouldSwitchRefreshRate(Context context) {
+        PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
+        boolean userSwitch = RefreshRateUtils.getPowerSaveRefreshRateSwitch(context);
+        return pm.isPowerSaveMode() && userSwitch;
+    }
 
     @Override
     public void onReceive(final Context context, Intent intent) {
-        // Refresh rate
-        RefreshRateUtils.setFPS(RefreshRateUtils.getRefreshRate(context));
-        IntentFilter filter = new IntentFilter();
-        PowerSaveModeChangeReceiver receiver = new PowerSaveModeChangeReceiver();
-        filter.addAction(PowerManager.ACTION_POWER_SAVE_MODE_CHANGED);
-        context.getApplicationContext().registerReceiver(receiver, filter);
+        int normalRefreshRate = RefreshRateUtils.getRefreshRate(context);
+        int powerSaveRefreshRate = RefreshRateUtils.getPowerSaveRefreshRate(context);
 
-        // Dirac
-        DiracUtils.initialize(context);
-
-        // Doze
-        DozeUtils.checkDozeService(context);
-        DozeUtils.enableDoze(context, DozeUtils.isDozeEnabled(context));
+        RefreshRateUtils.setFPS(shouldSwitchRefreshRate(context) ? powerSaveRefreshRate : normalRefreshRate);
     }
-
 }
