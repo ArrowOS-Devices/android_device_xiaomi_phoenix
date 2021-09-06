@@ -1,4 +1,4 @@
-# Proprietary files - from qssi-user 11 RKQ1.200826.002-21.8.4 release-keys build, unless pinned
+# Proprietary files - from qssi-user 11 RKQ1.200826.002-21.9.1 release-keys build, unless pinned
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
