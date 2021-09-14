@@ -22,6 +22,8 @@
 #include <hardware/hardware.h>
 #include "BiometricsFingerprint.h"
 
+#include <cutils/properties.h>
+
 #include <inttypes.h>
 #include <unistd.h>
 
@@ -211,6 +213,10 @@ IBiometricsFingerprint* BiometricsFingerprint::getInstance() {
     return sInstance;
 }
 
+void setFpVendorProp(const char* fp_vendor) {
+    property_set("persist.vendor.sys.fp.vendor", fp_vendor);
+}
+
 fingerprint_device_t* getDeviceForVendor(const char *class_name) {
     int err;
     const hw_module_t *hw_mdl = nullptr;
@@ -261,9 +267,11 @@ fingerprint_device_t* getFingerprintDevice() {
             ALOGE("Failed to load %s fingerprint module", vendor.c_str());
             continue;
         }
+        setFpVendorProp(vendor.c_str());
         return fp_device;
     }
 
+    setFpVendorProp("none");
     return nullptr;
 }
 
