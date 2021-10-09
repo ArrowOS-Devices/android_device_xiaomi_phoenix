@@ -72,6 +72,7 @@ persist.vendor.ims.disableIMSLogs=1
 persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.force_on_dc=true
 ril.subscription.types=RUIM
+persist.sys.fflag.override.settings_provider_model=false
 
 # Shutdown
 ro.build.shutdown_timeout=2
