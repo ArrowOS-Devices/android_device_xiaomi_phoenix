@@ -24,6 +24,7 @@
     <string name="refresh_rate_tile_disabled">Battery saver enabled</string>
 
     <!-- Dirac settings -->
+    <string name="dirac_enable">Enable dirac</string>
     <string name="dirac_title">Dirac sound enhancer</string>
     <string name="dirac_summary">Optimize audio quality</string>
     <string name="dirac_headset_title">Headset type</string>

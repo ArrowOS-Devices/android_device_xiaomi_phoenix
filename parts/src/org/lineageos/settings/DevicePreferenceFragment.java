@@ -23,6 +23,8 @@ import android.os.PowerManager;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.widget.Toast;
+import android.app.ActionBar;
+import android.app.Activity;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -46,7 +48,10 @@ public class DevicePreferenceFragment extends PreferenceFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
+        final ActionBar actionBar = getActivity().getActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
         mOverlayService = IOverlayManager.Stub.asInterface(ServiceManager.getService("overlay"));
         mPowerManagerService = (PowerManager) getContext().getSystemService(Context.POWER_SERVICE);
     }
