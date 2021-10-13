@@ -47,10 +47,12 @@ PRODUCT_COPY_FILES += \
 
 # ATRACE_HAL
 PRODUCT_PACKAGES += \
-    android.hardware.atrace@1.0-service
+    android.hardware.atrace@1.0-service \
+    android.hardware.atrace@1.0.vendor
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio.service \
     android.hardware.audio.common@4.0 \
     android.hardware.audio.common@4.0-util \
     android.hardware.audio.common@5.0 \
@@ -137,6 +139,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
@@ -145,13 +148,23 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     libdng_sdk.vendor \
     libgui_vendor \
     libxml2 \
     GCamGOPrebuilt \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    vendor.qti.hardware.camera.device@1.0.vendor \
+    android.hidl.memory.block@1.0 \
+    android.hidl.memory.block@1.0.vendor \
+    libstdc++.vendor
+
+# Crypto
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.keymaster@4.0.vendor
 
 # CNE
 PRODUCT_PACKAGES += \
@@ -191,6 +204,10 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.0.vendor \
     android.hardware.drm@1.3-service.clearkey
 
 # fastbootd
@@ -237,6 +254,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@1.2.vendor \
+    android.hardware.gnss@2.0.vendor \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss@3.0.vendor \
     android.hardware.gnss@2.1-impl-qti:64 \
     android.hardware.gnss@2.1-service-qti \
     libbatching \
@@ -266,7 +289,8 @@ PRODUCT_COPY_FILES += \
 # IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
-    android.hardware.ir@1.0-service
+    android.hardware.ir@1.0-service \
+    android.hardware.ir@1.0.vendor
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -315,6 +339,7 @@ PRODUCT_COPY_FILES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.0.vendor \
     libc2dcolorconvert \
     libmm-omxcore \
     libOmxAacEnc \
@@ -326,6 +351,17 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
+
+# NeuralNetworks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3 \
+    android.hardware.neuralnetworks@1.3.vendor \
+    android.hardware.neuralnetworks@1.2 \
+    android.hardware.neuralnetworks@1.2.vendor \
+    android.hardware.neuralnetworks@1.1 \
+    android.hardware.neuralnetworks@1.1.vendor \
+    android.hardware.neuralnetworks@1.0 \
+    android.hardware.neuralnetworks@1.0.vendor
 
 # Net
 PRODUCT_PACKAGES += \
@@ -417,6 +453,9 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.0.vendor \
+    android.hardware.power@1.1.vendor \
+    android.hardware.power@1.2.vendor \
     android.hardware.power-service-qti
 
 # Protobuf
@@ -460,13 +499,23 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor \
+    android.hardware.radio@1.2 \
     android.hardware.radio.config@1.1 \
-    android.hardware.radio@1.5 \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.0.vendor \
     android.hardware.secure_element@1.1 \
     libjson \
     libprotobuf-cpp-full \
     librmnetctl \
-    libxml2
+    libxml2 \
+    rild
 
 # Seccomp
 PRODUCT_COPY_FILES += \
@@ -538,6 +587,7 @@ PRODUCT_PACKAGES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.5.vendor \
     android.hardware.wifi@1.0-service \
     hostapd \
     libwifi-hal-ctrl \
