@@ -19,8 +19,8 @@
     </string-array>
     <string-array name="device_refresh_rates_val">
         <item>2</item>
-        <item>3</item>
-        <item>4</item>
+        <item>1</item>
+        <item>0</item>
     </string-array>
 
     <string-array name="device_power_save_refresh_rates">
@@ -28,7 +28,7 @@
         <item>60 Hz</item>
     </string-array>
     <string-array name="device_power_save_refresh_rates_val">
-        <item>1</item>
+        <item>3</item>
         <item>2</item>
     </string-array>
 
