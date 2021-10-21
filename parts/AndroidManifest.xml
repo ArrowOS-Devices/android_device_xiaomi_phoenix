@@ -22,40 +22,12 @@
         android:label="@string/device_settings_app_name"
         android:persistent="true">
 
-        <receiver android:name=".EarlyStartReceiver" android:directBootAware="true" android:exported="true">
-            <intent-filter android:priority="1000">
-                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-
         <receiver android:name=".BootCompletedReceiver" android:exported="true">
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-
-        <receiver android:name=".PowerSaveModeChangeReceiver" android:exported="true">
-            <intent-filter>
-                <action android:name="android.os.action.POWER_SAVE_MODE_CHANGED" />
-            </intent-filter>
-        </receiver>
-
-        <activity
-            android:name=".DevicePreferenceActivity"
-            android:label="@string/device_specific_settings_title"
-            android:exported="true"
-            android:theme="@style/Theme.SubSettingsBase">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.display" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/device_specific_settings_summary" />
-        </activity>
 
         <activity
             android:name=".doze.DozeSettingsActivity"
@@ -89,16 +61,6 @@
             <meta-data android:name="com.android.settings.summary"
                        android:resource="@string/dirac_summary" />
         </activity>
-
-        <service
-            android:name=".RefreshRateTileService"
-            android:icon="@drawable/ic_qs_refresh_rate"
-            android:label="@string/refresh_rate_tile_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
 
     </application>
 </manifest>
