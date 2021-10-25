@@ -65,7 +65,7 @@ ro.media.recorder-max-base-layer-fps=60
 ro.netflix.bsp_rev=Q6150-17263-1
 
 # Perfetto
-iorapd.perfetto.enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
 # Radio
 DEVICE_PROVISIONED=1
