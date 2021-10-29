@@ -8,6 +8,10 @@
    "target_path": "kernel/xiaomi/phoenix"
  },
   {
+    "repository": "android_device_xiaomi_extras",
+    "target_path": "device/xiaomi/extras"
+  },
+  {
     "repository": "android_packages_apps_GCamGOPrebuilt",
     "target_path": "packages/apps/GCamGOPrebuilt"
   },
