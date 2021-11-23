@@ -1,4 +1,4 @@
-# Proprietary files - from qssi-user 11 RKQ1.200826.002-21.9.1 release-keys build, unless pinned
+# Proprietary files - from qssi-user 11 RKQ1.200826.002-21.11.17 release-keys build, unless pinned
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -1417,7 +1417,7 @@ system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/lib-imsvideocodec.so
-system_ext/lib64/lib-imsvt.so|f989f77371391fc980f8aa830cdac0f9be1107c6
+system_ext/lib64/lib-imsvt.so|54a989105eebdb9747b215ae23551ec2507541e6
 system_ext/lib64/lib-imsvtextutils.so
 system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libdiag_system.so
