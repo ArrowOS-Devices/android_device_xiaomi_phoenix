@@ -215,7 +215,7 @@ PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor:64
 
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_sm6150
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_phoenix
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -311,7 +311,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_sm6150
+    android.hardware.light@2.0-service.xiaomi_phoenix
 
 # Media Configs
 PRODUCT_COPY_FILES += \
