@@ -49,6 +49,7 @@
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi_phoenix u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_phoenix        u:object_r:hal_light_default_exec:s0
+/vendor/bin/hw/android\.hardware\.power-service\.phoenix-libperfmgr         u:object_r:hal_power_default_exec:s0
 
 # IR
 /dev/ir_spi                u:object_r:lirc_device:s0
